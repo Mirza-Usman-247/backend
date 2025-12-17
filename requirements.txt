@@ -1,14 +1,18 @@
-# ========================================
-# Production Dependencies for Railway
-# ========================================
-
-# FastAPI and web server
+# FastAPI + Web Server
 fastapi==0.109.2
 uvicorn[standard]==0.27.1
 gunicorn==21.2.0
+
+# Pydantic
 pydantic==2.6.1
 pydantic-settings==2.1.0
 email-validator==2.1.0.post1
+
+# JWT / Auth
+python-jose[cryptography]==3.3.0
+passlib==1.7.4
+bcrypt==4.1.2
+PyJWT==2.8.0
 
 # Database drivers
 psycopg2-binary==2.9.9
@@ -18,25 +22,18 @@ alembic==1.13.1
 # Vector database
 qdrant-client==1.7.3
 
-# OpenRouter API (via OpenAI SDK)
+# OpenAI / OpenRouter SDK
 openai==1.12.0
 tiktoken==0.8.0
 
 # Utilities
 pyyaml==6.0.1
 python-multipart==0.0.9
-PyJWT==2.8.0
-passlib==1.7.4
-bcrypt==4.1.2
 python-dotenv==1.0.1
 tenacity==8.2.3
+httpx==0.26.0
 
-# Markdown processing
+# Markdown / HTML parsing
 markdown==3.5.2
 beautifulsoup4==4.12.3
 lxml==5.1.0
-
-# HTTP client for health checks
-httpx==0.26.0
-
-
