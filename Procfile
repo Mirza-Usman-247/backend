@@ -1,1 +1,1 @@
-web: gunicorn src.api.main:app --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT --workers 2 --timeout 120
+web: bash start.sh
